@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Municipality of Manolo Fortich Community Map</title>
+
+
+  <link rel="stylesheet" href="style.css" />
+
+    <!-- LEAFLET CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+</head>
+<body>
+
+  <header>
+    <h1>Municipality of Manolo Fortich Community Map</h1>
+    <p>Province of Bukidnon, Philippines</p>
+  </header>
+
+  <main>
+    <h2>Explore the Municipality of Manolo Fortich</h2>
+
+    <p class="description">
+      Search and explore important places, barangays,
+      establishments, and landmarks throughout the
+      Municipality of Manolo Fortich.
+    </p>
+
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search barangays or places..."
+      />
+
+      <button onclick="searchPlace()">Search</button>
+    </div>
+
+    <div id="searchResults"></div>
+
+    <div id="map"></div>
+
+    <div class="coordinates">
+      <h3>Selected Coordinates</h3>
+      <p id="coordinates">
+        Click anywhere on the map to get coordinates.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Municipality of Manolo Fortich Community Mapping Project</p>
+    <p>Province of Bukidnon, Philippines</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

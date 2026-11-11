@@ -1,0 +1,284 @@
+
+/* ==================================
+   GENERAL STYLING
+================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #eff6ff;
+  color: #1e3a8a;
+  line-height: 1.6;
+}
+
+/* ==================================
+   HEADER
+================================== */
+
+header {
+  background: linear-gradient(135deg, #172554, #1d4ed8, #3b82f6);
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #dbeafe;
+  font-size: 16px;
+}
+
+/* ==================================
+   MAIN CONTENT
+================================== */
+
+main {
+  max-width: 1150px;
+  margin: 35px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(30, 64, 175, 0.10);
+}
+
+main h2 {
+  color: #1d4ed8;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #64748b;
+  margin-bottom: 22px;
+}
+
+/* ==================================
+   SEARCH CONTAINER
+================================== */
+
+.search-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 2px solid #bfdbfe;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-container input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.search-container input::placeholder {
+  color: #94a3b8;
+}
+
+/* SEARCH BUTTON */
+
+.search-container button {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 13px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-container button:hover {
+  background: #172554;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+/* ==================================
+   SEARCH RESULTS
+================================== */
+
+#searchResults {
+  margin-bottom: 20px;
+  color: #1e40af;
+}
+
+#searchResults button {
+  transition: 0.2s;
+}
+
+/* ==================================
+   MAP
+================================== */
+
+#map {
+  width: 100%;
+  height: 520px;
+  border: 3px solid #bfdbfe;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.12);
+}
+
+/* ==================================
+   COORDINATES SECTION
+================================== */
+
+.coordinates {
+  margin-top: 25px;
+  padding: 20px;
+  background: #eff6ff;
+  border-left: 5px solid #2563eb;
+  border-radius: 10px;
+}
+
+.coordinates h3 {
+  color: #1e40af;
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+.coordinates p {
+  color: #475569;
+  font-size: 15px;
+}
+
+/* ==================================
+   MAP LEGEND
+================================== */
+
+.legend {
+  margin-top: 25px;
+  padding: 22px;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+}
+
+.legend h3 {
+  color: #1e40af;
+  margin-bottom: 12px;
+  font-size: 19px;
+}
+
+.legend ul {
+  list-style: none;
+}
+
+.legend ul li {
+  padding: 7px 0;
+  color: #334155;
+  border-bottom: 1px solid #dbeafe;
+}
+
+.legend ul li:last-child {
+  border-bottom: none;
+}
+
+/* ==================================
+   MAP POPUPS
+================================== */
+
+.leaflet-popup-content-wrapper {
+  background: #ffffff;
+  color: #1e3a8a;
+  border-radius: 10px;
+}
+
+.leaflet-popup-tip {
+  background: white;
+}
+
+.leaflet-popup-content h3 {
+  color: #2563eb;
+}
+
+/* ==================================
+   FOOTER
+================================== */
+
+footer {
+  background: linear-gradient(135deg, #172554, #1e40af);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 35px;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #dbeafe;
+}
+
+/* ==================================
+   RESPONSIVE DESIGN
+================================== */
+
+@media screen and (max-width: 768px) {
+
+  header h1 {
+    font-size: 23px;
+  }
+
+  main {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  main h2 {
+    font-size: 21px;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-container button {
+    width: 100%;
+  }
+
+  #map {
+    height: 400px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  header {
+    padding: 25px 12px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  #map {
+    height: 350px;
+  }
+
+}
