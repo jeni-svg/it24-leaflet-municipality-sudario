@@ -1,8 +1,4 @@
 
-/* ==================================
-   GENERAL STYLING
-================================== */
-
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* ==================================
-   HEADER
-================================== */
 
 header {
   background: linear-gradient(135deg, #172554, #1d4ed8, #3b82f6);
@@ -40,9 +33,6 @@ header p {
   font-size: 16px;
 }
 
-/* ==================================
-   MAIN CONTENT
-================================== */
 
 main {
   max-width: 1150px;
@@ -63,10 +53,6 @@ main h2 {
   color: #64748b;
   margin-bottom: 22px;
 }
-
-/* ==================================
-   SEARCH CONTAINER
-================================== */
 
 .search-container {
   display: flex;
@@ -93,7 +79,6 @@ main h2 {
   color: #94a3b8;
 }
 
-/* SEARCH BUTTON */
 
 .search-container button {
   background: linear-gradient(135deg, #2563eb, #1e40af);
@@ -113,10 +98,6 @@ main h2 {
   box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
 }
 
-/* ==================================
-   SEARCH RESULTS
-================================== */
-
 #searchResults {
   margin-bottom: 20px;
   color: #1e40af;
@@ -126,9 +107,6 @@ main h2 {
   transition: 0.2s;
 }
 
-/* ==================================
-   MAP
-================================== */
 
 #map {
   width: 100%;
@@ -138,10 +116,6 @@ main h2 {
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(30, 64, 175, 0.12);
 }
-
-/* ==================================
-   COORDINATES SECTION
-================================== */
 
 .coordinates {
   margin-top: 25px;
@@ -162,9 +136,6 @@ main h2 {
   font-size: 15px;
 }
 
-/* ==================================
-   MAP LEGEND
-================================== */
 
 .legend {
   margin-top: 25px;
@@ -194,9 +165,6 @@ main h2 {
   border-bottom: none;
 }
 
-/* ==================================
-   MAP POPUPS
-================================== */
 
 .leaflet-popup-content-wrapper {
   background: #ffffff;
@@ -212,10 +180,6 @@ main h2 {
   color: #2563eb;
 }
 
-/* ==================================
-   FOOTER
-================================== */
-
 footer {
   background: linear-gradient(135deg, #172554, #1e40af);
   color: white;
@@ -229,10 +193,6 @@ footer p {
   margin: 5px 0;
   color: #dbeafe;
 }
-
-/* ==================================
-   RESPONSIVE DESIGN
-================================== */
 
 @media screen and (max-width: 768px) {
 
